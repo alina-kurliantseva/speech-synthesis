@@ -1,0 +1,204 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ab7db7;
+}
+
+#background-image {
+  background-image: url('../img/speech-synthesis.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.dot-pattern {
+  background-image: url('../img/dot-pattern.png');
+  background-repeat: repeat;
+  -webkit-background-size: 2px;
+  -moz-background-size: 2px;
+  -o-background-size: 2px;
+  -ms-background-size: 2px;
+  background-size: 2px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.voiceinator {
+  padding: 2rem;
+  width: 25rem;
+  border-radius: 0.75rem;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+h1 {
+  width: calc(100% + 4rem);
+  margin: -2rem -2rem 2rem -2rem;
+  padding: 2rem;
+  background: #ab7db7;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  border: 0.5px solid #ab7db7;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  background: #e8e8e8;
+}
+
+textarea {
+  height: 10rem;
+}
+
+.voiceinator button {
+  background: #ab7db7;
+  width: 49%;
+  float: left;
+  margin-bottom: 0;
+  font-size: 1rem;
+  border: 0.5px solid #ab7db7;
+  border-radius: 0.5rem;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+
+.voiceinator button:hover {
+  background: #985ea6;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
+
+.label {
+  font-size: 1.25em;
+  color: #1d1d1d;
+}
+
+/*.col-sm- (small devices - screen width equal to or greater than 576px)*/
+@media only screen and (min-width: 576px) {
+  .voiceinator {
+    width: 35rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .voiceinator input,
+  .voiceinator button,
+  .voiceinator select,
+  .voiceinator textarea {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    height: 15rem;
+  }
+
+  .voiceinator button {
+    font-size: 1.25rem;
+  }
+
+  .label {
+    font-size: 1.5rem;
+  }
+}
+
+/*.col-md- (medium devices - screen width equal to or greater than 768px)*/
+@media only screen and (min-width: 768px) {
+  .voiceinator {
+    width: 40rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .voiceinator input,
+  .voiceinator button,
+  .voiceinator select,
+  .voiceinator textarea {
+    font-size: 1.75rem;
+  }
+
+  textarea {
+    height: 20rem;
+  }
+
+  .voiceinator button {
+    font-size: 1.5rem;
+  }
+
+  .label {
+    font-size: 1.75rem;
+  }
+}
+
+/*.col-lg- (large devices - screen width equal to or greater than 992px)*/
+@media only screen and (min-width: 992px) {
+  .voiceinator {
+    width: 50rem;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .voiceinator input,
+  .voiceinator button,
+  .voiceinator select,
+  .voiceinator textarea {
+    font-size: 2rem;
+  }
+
+  textarea {
+    height: 25rem;
+  }
+
+  .voiceinator button {
+    font-size: 1.75rem;
+  }
+
+  .label {
+    font-size: 2rem;
+  }
+}
